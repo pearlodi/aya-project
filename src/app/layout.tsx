@@ -9,7 +9,7 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-    const { theme, toggleTheme } = DarkModeToggle(); 
+    const { theme, toggleTheme } = DarkModeToggle();
 
     useEffect(() => {
         document.documentElement.classList.remove(theme === 'light' ? 'dark' : 'light');
@@ -21,6 +21,10 @@ export default function Layout({ children }: LayoutProps) {
             <head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Uncut+Sans:wght@400;700&display=swap"
+                    rel="stylesheet"
+                />
                 <title>My Next.js App</title>
             </head>
             <body className={`${theme === 'dark' ? 'background-dark text-white' : 'bg-white text-black'} transition-colors`}>

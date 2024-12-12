@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="flex flex-col order-2 md:order-1 items-center mt-8 md:mt-0">
             <Image src={topThree[1].icon} width={70} height={70} alt="image" />
-            <div className="flex items-center gap-[5.67px]">
+            <div className="flex items-center gap-[5.67px] mt-1">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[1].name}</p>
             </div>
             <div className="mt-2 md:mt-[17.9px]">
@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="flex flex-col order-1 md:order-2 items-center mt-8 md:mt-0">
           <Image src={topThree[0].icon} width={70} height={70} alt="image" />
 
-            <div className="flex items-center gap-[5.67px]">
+            <div className="flex items-center gap-[5.67px] mt-1">
             <Image src={trophy} alt="image" />
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[0].name}</p>
             </div>
@@ -66,7 +66,7 @@ export default function Hero() {
           <div className="flex flex-col order-3 items-center mt-8 md:mt-0">
           <Image src={topThree[2].icon} width={70} height={70} alt="image" />
 
-            <div className="flex items-center gap-[5.67px]">
+            <div className="flex items-center gap-[5.67px] mt-1">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[2].name}</p>
             </div>
             <div className="mt-2 md:mt-0mt-[17.9px]">
