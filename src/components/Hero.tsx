@@ -54,7 +54,7 @@ export default function Hero() {
               <Image src={topLight} alt="image" />
               <div className="back h-[121px] md:h-[174.11px]">
                 <div className="flex flex-col justify-center items-center pt-4">
-                  <p className="font-bold text-[#FFFFFF99]  text-base">Earned {topThree[0].points} points</p>
+                  <p className="font-medium text-[#FFFFFF99]  text-base">Earned {topThree[0].points} points</p>
                   <hr className="w-[205.58px] border border-gray-300 mt-[9px]" />
                   <div className="mt-[10.63px] flex justify-center items-center w-[60.26px] rounded-lg h-[44.47px] points border border-[#D0D5DD]">
                     <p className="font-bold text-[38px] text-[#FFFFFF]">1</p>
@@ -73,7 +73,7 @@ export default function Hero() {
               <Image src={top} alt="image" />
               <div className="back h-[121px]">
                 <div className="flex flex-col justify-center items-center pt-4">
-                  <p className="font-bold text-[#FFFFFF99] text-base">Earned {topThree[2].points} points</p>
+                  <p className="font-medium text-[#FFFFFF99] text-base">Earned {topThree[2].points} points</p>
                   <hr className="w-[205.58px] border border-gray-300 mt-[9px]" />
                   <div className="mt-[10.63px] flex justify-center items-center w-[60.26px] rounded-lg h-[44.47px] points border border-gray-300">
                     <p className="font-bold text-[38px] text-[#FFFFFF]">3</p>
