@@ -47,6 +47,7 @@ export default function Hero() {
           <div className="flex flex-col items-center mt-8 md:mt-0">
             <Image src={icon} alt="image" />
             <div className="flex items-center gap-[5.67px]">
+            <Image src={trophy} alt="image" />
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[0].name}</p>
             </div>
             <div className="mt-2 md:mt-[17.9px]">
