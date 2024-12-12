@@ -80,17 +80,17 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
               <TableBody>
                 {displayedData.map((member, index) => (
                   <TableRow className={`${index === 0
-                      ? "border border-[#75E0A7]"
-                      : index === 1
-                        ? "border border-[#FF9C66] "
-                        : ""
+                    ? "border border-[#75E0A7]"
+                    : index === 1
+                      ? "border border-[#FF9C66] "
+                      : ""
                     }`} key={index}>
                     <TableCell >{member.position}</TableCell>
                     <TableCell className="">
                       <div className="flex gap-3 w-[250px] md:w-fit">
                         <Image src={avatar} alt='user Avatar' />
                         <div>
-                          <p className="text-[#101828] dark:text-[#D0D5DD]">{member.name}</p>
+                          <p className="text-[#101828] dark:text-[#98A2B3]">{member.name}</p>
                           <p className="font-normal text-base">{member.userName}</p>
                         </div>
                       </div>
