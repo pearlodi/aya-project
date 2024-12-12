@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containers {
+  @apply w-full flex flex-col items-center justify-center
+}
+
+.tag {
+  background: linear-gradient(135deg, rgba(232, 184, 246, 0.16) 0%, rgba(20, 60, 253, 0.16) 100%);
+  border: 1px solid rgba(208, 213, 221, 1);
+}
+
+.tag-black {
+  background: linear-gradient(135deg, rgba(232, 184, 246, 0.3) 0%, rgba(20, 60, 253, 0.3) 100%);
+  border: 1px solid rgba(232, 184, 246, 0.5);
+
+}
+
+.background-light {
+  background: linear-gradient(189.07deg, rgba(255, 255, 255, 0.1) 47.67%, rgba(232, 184, 246, 0.1) 70.14%, rgba(20, 60, 253, 0.1) 92.38%),
+    url('../assets/images/background-bottom.svg'),
+    url('../assets/images/background-top.svg');
+  background-size: cover, contain, contain;
+  background-position: top, top center, bottom center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  width: 100%;
+}
+.background-dark {
+  background: linear-gradient(171.69deg, #04080f 55.95%, rgba(232, 184, 246, 0.2) 72.53%, rgba(124, 121, 250, 0.2) 84.29%, rgba(20, 60, 253, 0.2) 94.32%),
+
+    url('../assets/images/background-bottom.svg'),
+    url('../assets/images/background-top.svg');
+    background-size: cover, contain, contain;
+    background-position: top, top center, bottom center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    width: 100%;
+}
+
+.back {
+  background: url('../assets/images/3d-front.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.points {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.144) 0%, rgba(255, 255, 255, 0.16) 100%);
+
+}
