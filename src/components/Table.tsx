@@ -80,7 +80,7 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
               <TableBody>
                 {displayedData.map((member, index) => (
                   <TableRow className={`${index === 0
-                    ? "border border-[#75E0A7]"
+                    ? "border border-[#3df292]"
                     : index === 1
                       ? "border border-[#FF9C66] "
                       : ""
