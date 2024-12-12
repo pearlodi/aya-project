@@ -1,6 +1,7 @@
 'use client'
 
 import DarkModeToggle from '@/components/DarkModeToggle';
+
 import './globals.css';
 
 import React, { useEffect } from 'react';

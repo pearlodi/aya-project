@@ -23,6 +23,9 @@ export default {
 			400: '#D0D5DD'
 		  }
 		},
+		fontFamily: {
+			sans: ["Uncut Sans", "sans-serif"], // Add "Uncut Sans" to your font stack
+		  },
 	  },
 	},
 //   plugins: [require('@tailwindcss/forms')],
