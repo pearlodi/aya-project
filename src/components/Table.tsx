@@ -71,19 +71,20 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
                 <TableRow>
                   <TableHead>Position</TableHead>
                   <TableHead>Name</TableHead>
-                  <TableHead>Points</TableHead>
-                  <TableHead>Hackathon</TableHead>
+                  <TableHead>   {isCommunity ? 'Points' : 'Hackathons'}</TableHead>
+                  <TableHead>
+                    {isCommunity ? 'Hackathons' : 'Builders'}
+                  </TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {displayedData.map((member, index) => (
-                  <TableRow  className={`${
-                    index === 0
+                  <TableRow className={`${index === 0
                       ? "border border-[#75E0A7]"
                       : index === 1
-                      ? "border border-[#FF9C66] "
-                      : ""
-                  }`}  key={index}>
+                        ? "border border-[#FF9C66] "
+                        : ""
+                    }`} key={index}>
                     <TableCell >{member.position}</TableCell>
                     <TableCell className="">
                       <div className="flex gap-3 w-[250px] md:w-fit">
@@ -102,18 +103,18 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
             </Table>
 
             <div className="flex justify-between items-center mt-4">
-            <div className="text-[#344054] dark:text-[#667085] font-medium text-sm">
-              Page {currentPage} of {totalPages}
+              <div className="text-[#344054] dark:text-[#667085] font-medium text-sm">
+                Page {currentPage} of {totalPages}
+              </div>
+              <div className="gap-2 flex">
+                <Button className="border border-[#D0D5DD] text-[#344054] bg-[white] rounded-[8px] py-2 px-[14px]" onClick={prevPage} disabled={currentPage === 1}>
+                  Previous
+                </Button>
+                <Button className="border border-[#D0D5DD] text-[#344054] bg-[white]  rounded-[8px] py-2 px-[14px]" onClick={nextPage} disabled={currentPage === totalPages}>
+                  Next
+                </Button>
+              </div>
             </div>
-            <div className="gap-2 flex">
-              <Button className="border border-[#D0D5DD] text-[#344054] bg-[white] rounded-[8px] py-2 px-[14px]" onClick={prevPage} disabled={currentPage === 1}>
-                Previous
-              </Button>
-              <Button className="border border-[#D0D5DD] text-[#344054] bg-[white]  rounded-[8px] py-2 px-[14px]" onClick={nextPage} disabled={currentPage === totalPages}>
-                Next
-              </Button>
-            </div>
-          </div>
           </div>
         </div>
       </div>

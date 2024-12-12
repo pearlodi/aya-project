@@ -27,7 +27,7 @@ export default function Hero() {
      
 
           <div className="flex flex-col items-center mt-8 md:mt-0">
-            <Image src={icon} alt="image" />
+            <Image src={topThree[1].icon} width={100} height={100} alt="image" />
             <div className="flex items-center gap-[5.67px]">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[1].name}</p>
             </div>
@@ -45,7 +45,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-8 md:mt-0">
-            <Image src={icon} alt="image" />
+          <Image src={topThree[0].icon} width={100} height={100} alt="image" />
+
             <div className="flex items-center gap-[5.67px]">
             <Image src={trophy} alt="image" />
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[0].name}</p>
@@ -64,7 +65,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-8 md:mt-0">
-            <Image src={icon} alt="image" />
+          <Image src={topThree[2].icon} width={100} height={100} alt="image" />
+
             <div className="flex items-center gap-[5.67px]">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[2].name}</p>
             </div>
