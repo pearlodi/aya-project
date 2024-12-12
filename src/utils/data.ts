@@ -1,6 +1,5 @@
 import icon1 from '../assets/images/icon.svg'
 import icon2 from '../assets/images/icon2.svg'
-
 import icon3 from '../assets/images/icon3.svg'
 
 export type Member = {
