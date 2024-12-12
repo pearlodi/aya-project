@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import top from '../assets/images/3d-top.svg'
 import topLight from '../assets/images/3d-top-light.svg'
-import icon from '../assets/images/icon.svg'
 import trophy from '../assets/images/trophy.svg'
 import { communityData, builderData, Member } from '@/utils/data'
 import TableComponent from './Table'
