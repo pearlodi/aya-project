@@ -45,20 +45,20 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
 
   return (
     <div className="w-full max-w-full flex justify-center items-center  dark:bg-[#04080f] pb-[243px]">
-      <div className="w-full max-w-full md:max-w-[1202px] px-8 lg:px-0">
+      <div className="w-full max-w-full md:max-w-[1202px] px-4 lg:px-0">
         <div className="w-full mt-[75px]">
           <div className="md:flex justify-between items-center">
-            <p className="text-gray-400 dark:text-grayDark-200 font-semibold text-2xl">Leaderboard table</p>
+            <p className="text-gray-400 dark:text-grayDark-200 font-semibold text-base md:text-2xl">Leaderboard table</p>
             <div className="bg-[#F8F9FC] dark:bg-[#101828] flex gap-4 p-2 rounded-[12px] w-fit mt-3 md:mt-0 ">
               <button
                 onClick={() => setIsCommunity(true)}
-                className={`${isCommunity ? "bg-[#004EEB] text-white p-2 rounded-[4px] font-medium text-base" : "text-gray-300 dark:text-grayDark-400 font-medium text-base"} gap-2 flex justify-center items-center`}
+                className={`${isCommunity ? "bg-[#004EEB] text-white p-2 rounded-[4px] font-medium text-sm md:text-base" : "text-gray-300 dark:text-grayDark-400 font-medium text-sm md:text-base"} gap-2 flex justify-center items-center`}
               >
                 Builders <span className="flex justify-center items-center  w-[29px] h-[29px] bg-white rounded-full text-[#004EEB] font-medium text-[12px]">{communityData.length}</span>
               </button>
               <button
                 onClick={() => setIsCommunity(false)}
-                className={`${!isCommunity ? "bg-[#004EEB] text-white p-2 rounded-[4px] font-medium text-base" : "text-gray-300 dark:text-grayDark-400 font-medium text-base"} gap-2 flex justify-center items-center`}
+                className={`${!isCommunity ? "bg-[#004EEB] text-white p-2 rounded-[4px] font-medium text-sm md:text-base" : "text-gray-300 dark:text-grayDark-400 font-medium text-sm md:text-base"} gap-2 flex justify-center items-center`}
               >
                 Communities <span className="flex justify-center items-center w-[29px] h-[29px] bg-white rounded-full text-[#004EEB] font-medium text-[12px]">{builderData.length}</span>
               </button>

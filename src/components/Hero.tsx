@@ -18,15 +18,15 @@ export default function Hero() {
     <section>
    
       <div className="containers background-light dark:background-dark pt-[131px] px-8 lg:px-0">
-        <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]">
-          <p className="text-gray-100 dark:text-[#D0D5DD] text-center text-sm font-medium">Top Builders and Communities</p>
+        <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
+          <p className="text-gray-100 dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and Communities</p>
         </div>
-        <h1 className="font-semibold text-[60px]">Leaderboard</h1>
-        <div className="md:flex w-full  justify-center gap-[37px] items-end mt-[42px]">
+        <h1 className="font-semibold text-[40px] md:text-[60px]">Leaderboard</h1>
+        <div className="md:flex-row flex flex-col w-full  justify-center gap-[37px] md:items-end mt-[42px]">
      
 
-          <div className="flex flex-col items-center mt-8 md:mt-0">
-            <Image src={topThree[1].icon} width={100} height={100} alt="image" />
+          <div className="flex flex-col order-2 md:order-1 items-center mt-8 md:mt-0">
+            <Image src={topThree[1].icon} width={70} height={70} alt="image" />
             <div className="flex items-center gap-[5.67px]">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[1].name}</p>
             </div>
@@ -43,8 +43,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-8 md:mt-0">
-          <Image src={topThree[0].icon} width={100} height={100} alt="image" />
+          <div className="flex flex-col order-1 md:order-2 items-center mt-8 md:mt-0">
+          <Image src={topThree[0].icon} width={70} height={70} alt="image" />
 
             <div className="flex items-center gap-[5.67px]">
             <Image src={trophy} alt="image" />
@@ -63,8 +63,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-8 md:mt-0">
-          <Image src={topThree[2].icon} width={100} height={100} alt="image" />
+          <div className="flex flex-col order-3 items-center mt-8 md:mt-0">
+          <Image src={topThree[2].icon} width={70} height={70} alt="image" />
 
             <div className="flex items-center gap-[5.67px]">
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[2].name}</p>
