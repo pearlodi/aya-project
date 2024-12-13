@@ -6,7 +6,7 @@ import './globals.css';
 import DarkModeToggle from '@/components/DarkModeToggle';
 
 const myFont = localFont({
-  src: './Uncut-Sans-regular.woff2',
+  src: 'Uncut-Sans-regular.woff2',
   display: 'swap', 
 });
 
