@@ -53,7 +53,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "4 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "Hack4Futo Hackathon",
+    hackathonName: "Hack4Futo ",
     status: "private",
     reward: "$2,000",
     participants: 100,
@@ -65,7 +65,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "10 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "Build4Africa Hackathon",
+    hackathonName: "Build4Africa ",
     status: "public",
     reward: "$5000",
     participants: 200,
@@ -77,7 +77,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "3 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "TechPioneers Hackathon",
+    hackathonName: "TechPioneers ",
     status: "private",
     reward: "$3500",
     participants: 150,
@@ -101,7 +101,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "6 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "CodeCrushers Hackathon",
+    hackathonName: "CodeCrushers ",
     status: "private",
     reward: "$4000",
     participants: 180,
@@ -113,7 +113,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "2 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "DevSprint Hackathon",
+    hackathonName: "DevSprint ",
     status: "public",
     reward: "$2500",
     participants: 120,
@@ -125,7 +125,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "5 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "AI Vision Hackathon",
+    hackathonName: "AI Vision ",
     status: "private",
     reward: "$6000",
     participants: 250,
@@ -137,7 +137,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "15 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "HackTheFuture Hackathon",
+    hackathonName: "HackTheFuture ",
     status: "public",
     reward: "$8000",
     participants: 350,
@@ -149,7 +149,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "8 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "Frontend Innovation Hackathon",
+    hackathonName: "Frontend Innovation ",
     status: "private",
     reward: "$3000",
     participants: 130,
@@ -161,7 +161,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "1 day until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "TechNova Hackathon",
+    hackathonName: "TechNova ",
     status: "public",
     reward: "$10000",
     participants: 500,
@@ -173,7 +173,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "9 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "CloudDev Hackathon",
+    hackathonName: "CloudDev ",
     status: "private",
     reward: "$4500",
     participants: 210,
@@ -185,7 +185,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "7 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "NextGen Hackathon",
+    hackathonName: "NextGen ",
     status: "public",
     reward: "$3500",
     participants: 170,
@@ -197,7 +197,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "13 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "CyberDefend Hackathon",
+    hackathonName: "CyberDefend ",
     status: "private",
     reward: "$5500",
     participants: 220,
@@ -209,7 +209,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "14 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "Web Innovators Hackathon",
+    hackathonName: "Web Innovators ",
     status: "public",
     reward: "$4000",
     participants: 190,
@@ -221,7 +221,7 @@ export const hackathonData: Hackathon[] = [
   {
     daysRemain: "11 days until registration ends",
     backgroundImage: hackathon,
-    hackathonName: "StartUp Challenge Hackathon",
+    hackathonName: "StartUp Challenge ",
     status: "private",
     reward: "$5000",
     participants: 160,

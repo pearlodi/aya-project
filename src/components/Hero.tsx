@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { communityData, builderData, Member } from '@/utils/data'
 import TableComponent from './Table'
 import React from 'react'
+import Container from './Container'
 
 export default function Hero() {
   const [isCommunity, setIsCommunity] = React.useState(true)
@@ -13,15 +14,13 @@ export default function Hero() {
 
   return (
     <section>
-   
-      <div className="containers background-light dark:background-dark pt-[131px] px-8 lg:px-0">
-        <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
+      <div className=" bg-no-repeat bg-custom-light bg-light-gradient bg-custom-light dark:bg-dark-gradient dark:bg-custom-light pt-[131px] px-8 lg:px-0">
+       <Container className='py-0 containers'>
+       <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
           <p className="text-gray-100 dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and Communities</p>
         </div>
         <h1 className="font-semibold text-[40px] md:text-[60px]">Leaderboard</h1>
         <div className="md:flex-row flex flex-col w-full  justify-center gap-[37px] md:items-end mt-[42px]">
-     
-
           <div className="flex flex-col order-2 md:order-1 items-center mt-8 md:mt-0">
             <Image src={topThree[1].icon} width={70} height={70} alt="image" />
             <div className="flex items-center gap-[5.67px] mt-1">
@@ -42,7 +41,6 @@ export default function Hero() {
           </div>
           <div className="flex flex-col order-1 md:order-2 items-center mt-8 md:mt-0">
           <Image src={topThree[0].icon} width={70} height={70} alt="image" />
-
             <div className="flex items-center gap-[5.67px] mt-1">
             <Image src='/images/trophy.svg' width={16.67} height={16.67}  alt="image" />
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[0].name}</p>
@@ -80,6 +78,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+       </Container>
       </div>
       <TableComponent isCommunity={isCommunity} setIsCommunity={setIsCommunity} />
     </section>

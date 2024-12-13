@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { communityData, builderData, Member } from "@/utils/data"
+import Container from "./Container"
+
 interface TableComponentProps {
   isCommunity: boolean
   setIsCommunity: React.Dispatch<React.SetStateAction<boolean>>
@@ -44,7 +46,8 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
 
   return (
     <div className="w-full max-w-full flex justify-center items-center  dark:bg-[#04080f] pb-[243px]">
-      <div className="w-full max-w-full md:max-w-[1202px] px-4 lg:px-0">
+      <Container>
+      <div className="w-full max-w-full md:max-w-[1202px]">
         <div className="w-full mt-[75px]">
           <div className="md:flex justify-between items-center">
             <p className="text-gray-400 dark:text-grayDark-200 font-semibold text-base md:text-2xl">Leaderboard table</p>
@@ -117,6 +120,7 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
           </div>
         </div>
       </div>
+      </Container>
     </div>
   )
 }

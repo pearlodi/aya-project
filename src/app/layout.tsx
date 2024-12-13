@@ -1,41 +1,28 @@
-'use client'
 
-import DarkModeToggle from '@/components/DarkModeToggle';
+import localFont from 'next/font/local'
+import { ThemeProvider } from 'next-themes'
 
 import './globals.css';
+import DarkModeToggle from '@/components/DarkModeToggle';
+const myFont = localFont({
+    src: '../../public/fonts/Uncut-Sans-regular.woff2',
+})
 
-import React, { useEffect } from 'react';
-interface LayoutProps {
-    children: React.ReactNode;
-}
-
-export default function Layout({ children }: LayoutProps) {
-    const { theme, toggleTheme } = DarkModeToggle();
-
-    useEffect(() => {
-        document.documentElement.classList.remove(theme === 'light' ? 'dark' : 'light');
-        document.documentElement.classList.add(theme);
-    }, [theme]);
-
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode
+}) {
     return (
-        <html lang="en" className={theme}>
-            <head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-               
-                <title>My Next.js App</title>
-            </head>
-            <body className={`${theme === 'dark' ? 'background-dark text-white' : 'bg-white text-black'} transition-colors`}>
-                <div>
-                    <button
-                        onClick={toggleTheme}
-                        className="fixed top-4 right-4 p-2 bg-gray-800 text-white rounded-full"
-                    >
-                        {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-                    </button>
-                    {children}
-                </div>
+        <html lang="en" className={myFont.className} suppressHydrationWarning>
+            <body>
+                <ThemeProvider attribute="class" defaultTheme='light'>
+                    <div>
+                        <DarkModeToggle />
+                        {children}
+                    </div>
+                </ThemeProvider>
             </body>
         </html>
-    );
+    )
 }

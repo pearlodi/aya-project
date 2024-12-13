@@ -1,25 +1,16 @@
-import { useState, useEffect } from 'react';
+'use client';
 
-const DarkModeToggle = () => {
-    const [theme, setTheme] = useState<'light' | 'dark'>('light');
+import { useTheme } from 'next-themes';
 
-    useEffect(() => {
-        const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-        if (storedTheme) {
-            setTheme(storedTheme);
-            document.documentElement.classList.add(storedTheme);
-        }
-    }, []);
+export default function DarkModeToggle() {
+    const { theme, setTheme } = useTheme();
 
-    const toggleTheme = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-        document.documentElement.classList.remove(theme);
-        document.documentElement.classList.add(newTheme);
-    };
-
-    return { theme, toggleTheme };
-};
-
-export default DarkModeToggle
+    return (
+        <button
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="fixed top-4 right-4 p-2 bg-gray-800 text-white rounded-full"
+        >
+            {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+        </button>
+    );
+}
