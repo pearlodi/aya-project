@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { communityData, builderData, Member } from "@/utils/data"
-import avatar from '../assets/images/Avatar.svg'
+import avatar from '../../public/images/Avatar.svg'
 interface TableComponentProps {
   isCommunity: boolean
   setIsCommunity: React.Dispatch<React.SetStateAction<boolean>>

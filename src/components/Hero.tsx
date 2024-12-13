@@ -1,8 +1,9 @@
 "use client"
 import Image from 'next/image'
-import top from '../assets/images/3d-top.svg'
-import topLight from '../assets/images/3d-top-light.svg'
-import trophy from '../assets/images/trophy.svg'
+import top from '../../public/images/3d-top.svg'
+
+import topLight from '../../public/images/3d-top-light.svg'
+import trophy from '../../public/images/trophy.svg'
 import { communityData, builderData, Member } from '@/utils/data'
 import TableComponent from './Table'
 import React from 'react'
