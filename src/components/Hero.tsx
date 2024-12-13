@@ -1,9 +1,5 @@
 "use client"
 import Image from 'next/image'
-import top from '../../public/images/3d-top.svg'
-
-import topLight from '../../public/images/3d-top-light.svg'
-import trophy from '../../public/images/trophy.svg'
 import { communityData, builderData, Member } from '@/utils/data'
 import TableComponent from './Table'
 import React from 'react'
@@ -32,7 +28,7 @@ export default function Hero() {
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[1].name}</p>
             </div>
             <div className="mt-2 md:mt-[17.9px]">
-              <Image src={top} alt="image" />
+            <Image src='images/3d-top.svg' width={284} height={16.68} alt="image" />
               <div className="back h-[121px]">
                 <div className="flex flex-col justify-center items-center pt-4">
                   <p className="font-medium text-[#FFFFFF99] text-base">Earned {topThree[1].points} points</p>
@@ -48,11 +44,11 @@ export default function Hero() {
           <Image src={topThree[0].icon} width={70} height={70} alt="image" />
 
             <div className="flex items-center gap-[5.67px] mt-1">
-            <Image src={trophy} alt="image" />
+            <Image src='/images/trophy.svg' width={16.67} height={16.67}  alt="image" />
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[0].name}</p>
             </div>
             <div className="mt-2 md:mt-[17.9px]">
-              <Image src={topLight} alt="image" />
+              <Image src='images/3d-top-light.svg' width={288} height={24} alt="image" />
               <div className="back h-[121px] md:h-[174.11px]">
                 <div className="flex flex-col justify-center items-center pt-4">
                   <p className="font-medium text-[#FFFFFF99]  text-base">Earned {topThree[0].points} points</p>
@@ -71,7 +67,7 @@ export default function Hero() {
               <p className="text-gray-200 dark:text-grayDark-100 font-bold text-base">{topThree[2].name}</p>
             </div>
             <div className="mt-2 md:mt-0mt-[17.9px]">
-              <Image src={top} alt="image" />
+              <Image src='images/3d-top.svg' width={284} height={16.68} alt="image" />
               <div className="back h-[121px]">
                 <div className="flex flex-col justify-center items-center pt-4">
                   <p className="font-medium text-[#FFFFFF99] text-base">Earned {topThree[2].points} points</p>

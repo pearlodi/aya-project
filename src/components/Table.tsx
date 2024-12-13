@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { communityData, builderData, Member } from "@/utils/data"
-import avatar from '../../public/images/Avatar.svg'
 interface TableComponentProps {
   isCommunity: boolean
   setIsCommunity: React.Dispatch<React.SetStateAction<boolean>>
@@ -88,7 +87,7 @@ export default function TableComponent({ isCommunity, setIsCommunity }: TableCom
                     <TableCell >{member.position}</TableCell>
                     <TableCell className="">
                       <div className="flex gap-3 w-[250px] md:w-fit">
-                        <Image src={avatar} alt='user Avatar' />
+                        <Image src='images/Avatar.svg' width={40} height={40} alt='user Avatar' />
                         <div>
                           <p className="text-[#101828] dark:text-[#98A2B3]">{member.name}</p>
                           <p className="font-normal text-base">{member.userName}</p>
