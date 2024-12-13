@@ -1,41 +1,25 @@
-'use client'
-
+import { ThemeProvider } from 'next-themes';
+import { cn } from '@/lib/utils';
+import './globals.css';  // Import global styles where the font is defined
 import DarkModeToggle from '@/components/DarkModeToggle';
 
-import './globals.css';
-
-import React, { useEffect } from 'react';
-interface LayoutProps {
-    children: React.ReactNode;
-}
-
-export default function Layout({ children }: LayoutProps) {
-    const { theme, toggleTheme } = DarkModeToggle();
-
-    useEffect(() => {
-        document.documentElement.classList.remove(theme === 'light' ? 'dark' : 'light');
-        document.documentElement.classList.add(theme);
-    }, [theme]);
-
-    return (
-        <html lang="en" className={theme}>
-            <head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-               
-                <title>My Next.js App</title>
-            </head>
-            <body className={`${theme === 'dark' ? 'background-dark text-white' : 'bg-white text-black'} transition-colors`}>
-                <div>
-                    <button
-                        onClick={toggleTheme}
-                        className="fixed top-4 right-4 p-2 bg-gray-800 text-white rounded-full"
-                    >
-                        {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-                    </button>
-                    {children}
-                </div>
-            </body>
-        </html>
-    );
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={cn('font-sans')} suppressHydrationWarning>
+      <body className="">
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <div>
+            <header>
+              <DarkModeToggle />
+            </header>
+            <main>{children}</main>
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }
