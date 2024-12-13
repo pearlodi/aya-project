@@ -4,8 +4,9 @@ import { cn } from '@/lib/utils';
 import localFont from 'next/font/local';
 import './globals.css';
 import DarkModeToggle from '@/components/DarkModeToggle';
+
 const myFont = localFont({
-    src: 'fonts/Uncut-Sans-Regular.woff2',
+  src: './Uncut-Sans-regular.woff2',
   display: 'swap', 
 });
 
@@ -23,7 +24,6 @@ export default function RootLayout({
               <DarkModeToggle />
             </header>
             <main>{children}</main>
-
           </div>
         </ThemeProvider>
       </body>
