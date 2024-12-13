@@ -56,7 +56,7 @@ const HackathonList = () => {
     return (
         <div>
             <div className="w-full ">
-                <div className='projects-background-light dark:background-dark px-4 lg:px-0'>
+                <div className='projects-background-light dark:background-dark px-4 '>
                     <div className='flex justify-center items-center  '>
                         <div className="w-[950px] mt-[157px] flex flex-col items-center justify-center" >
                             <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
@@ -71,7 +71,7 @@ const HackathonList = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center w-full px-4 lg:px-0 dark:bg-[#04080F]">
+            <div className="flex justify-center w-full px-4  dark:bg-[#04080F]">
                 <div className="w-full max-w-full md:w-[1216px]">
                     <div className="mt-[60px] lg:flex items-center justify-between">
                         <Input
@@ -80,7 +80,7 @@ const HackathonList = () => {
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="placehoder:text-[red] w-full max-w-full border dark:text-[#667085] dark:border-[#344054] border-[#D0D5DD] md:w-[395px] text-[#667085] text-sm"
                         />
-                        <div className="dark:bg-[#101828] bg-[#EFF4FF] border dark:border-[#1D2939] border-[#EAECF5] p-2 rounded-[12px] flex  gap-2 w-fit mt-4 lg:mt-0">
+                        <div className="dark:bg-[#101828] overflow-scroll max-w-full bg-[#EFF4FF] border dark:border-[#1D2939] border-[#EAECF5] p-2 rounded-[12px] flex  gap-2 w-fit mt-4 lg:mt-0">
                             {["ongoing", "upcoming", "closed"].map((filter) => (
                                 <Button
                                     key={filter}
