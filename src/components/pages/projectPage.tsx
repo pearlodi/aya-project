@@ -15,8 +15,12 @@ export default function ProjectPage() {
                         </div>
 
                     </div>
-                    <div className='w-full flex justify-center items-center mt-10'>
+                    <div className='w-full flex justify-center items-center mt-10 dark:hidden'>
                         <Image src='/images/frame.svg' alt='' width={1440}
+                            height={211} />
+                    </div>
+                    <div className='w-full flex justify-center items-center mt-10 dark:flex hidden'>
+                        <Image src='/images/projects-hero-dark.svg' alt='' width={1440}
                             height={211} />
                     </div>
                     <div>

@@ -66,8 +66,11 @@ const HackathonList = () => {
 
                         </div>
                     </div>
-                    <div className='w-full flex justify-center items-center mt-10'>
+                    <div className='w-full flex justify-center items-center mt-10 dark:hidden'>
                         <Image src='images/hackathon.svg' alt='' width={953} height={338.5} />
+                    </div>
+                    <div className='w-full flex justify-center items-center mt-10 dark:flex hidden'>
+                        <Image src='images/hackathon-dark.svg' alt='' width={953} height={338.5} />
                     </div>
                 </div>
             </div>
@@ -80,7 +83,7 @@ const HackathonList = () => {
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="placehoder:text-[red] w-full max-w-full border dark:text-[#667085] dark:border-[#344054] border-[#D0D5DD] md:w-[395px] text-[#667085] text-sm"
                         />
-                        <div className="dark:bg-[#101828] overflow-scroll max-w-full bg-[#EFF4FF] border dark:border-[#1D2939] border-[#EAECF5] p-2 rounded-[12px] flex  gap-2 w-fit mt-4 lg:mt-0">
+                        <div className="dark:bg-[#101828] md:overflow-auto overflow-scroll max-w-full bg-[#EFF4FF] border dark:border-[#1D2939] border-[#EAECF5] p-2 rounded-[12px] flex  gap-2 w-fit mt-4 lg:mt-0">
                             {["ongoing", "upcoming", "closed"].map((filter) => (
                                 <Button
                                     key={filter}
