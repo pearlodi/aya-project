@@ -1,14 +1,7 @@
-
 import { ThemeProvider } from 'next-themes';
-import { cn } from '@/lib/utils'; 
-import localFont from 'next/font/local';
-import './globals.css';
+import { cn } from '@/lib/utils';
+import './globals.css';  // Import global styles where the font is defined
 import DarkModeToggle from '@/components/DarkModeToggle';
-
-const myFont = localFont({
-  src: 'Uncut-Sans-regular.woff2',
-  display: 'swap', 
-});
 
 export default function RootLayout({
   children,
@@ -16,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn(myFont.className)} suppressHydrationWarning>
+    <html lang="en" className={cn('font-sans')} suppressHydrationWarning>
       <body className="">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div>
