@@ -24,7 +24,7 @@ export default {
 		  }
 		},
 		fontFamily: {
-			sans: ["Uncut Sans", "sans-serif"], // Add "Uncut Sans" to your font stack
+			sans: ["Uncut Sans", "sans-serif"],
 		  },
 	  },
 	},

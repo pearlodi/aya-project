@@ -13,6 +13,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/Uncut-Sans-bold.woff2') format('woff2'),
+       url('/fonts/Uncut-Sans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Uncut Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Uncut Sans', sans-serif;
+  font-weight: bold; 
+}
+
 body {
   font-family: 'Uncut Sans', sans-serif;
 }
@@ -33,31 +51,73 @@ body {
 
 .background-light {
   background: linear-gradient(189.07deg, rgba(255, 255, 255, 0.1) 47.67%, rgba(232, 184, 246, 0.1) 70.14%, rgba(20, 60, 253, 0.1) 92.38%),
-    url('../assets/images/background-bottom.svg'),
-    url('../assets/images/background-top.svg');
+    url('../../public/images/background-bottom.svg'),
+    url('../../public/images/background-top.svg');
   background-size: cover, contain, contain;
+  background-position: top, top center, bottom center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  width: 100%;
+}
+.projects-background-light {
+  background: linear-gradient(189.07deg, rgba(255, 255, 255, 0.1) 47.67%, rgba(232, 184, 246, 0.1) 70.14%, rgba(20, 60, 253, 0.1) 92.38%),
+    url('../../public/images/background-bottom.svg');
   background-position: top, top center, bottom center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   width: 100%;
 }
 .background-dark {
   background: linear-gradient(171.69deg, #04080f 55.95%, rgba(232, 184, 246, 0.2) 72.53%, rgba(124, 121, 250, 0.2) 84.29%, rgba(20, 60, 253, 0.2) 94.32%),
-
-    url('../assets/images/background-bottom.svg'),
-    url('../assets/images/background-top.svg');
+    url('../../public/images/background-bottom.svg'),
+    url('../../public/images/background-top.svg');
     background-size: cover, contain, contain;
     background-position: top, top center, bottom center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     width: 100%;
 }
 
-.back {
-  background: url('../assets/images/3d-front.svg');
+.hack {
+  background: url('../../public/images/hack.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+.back {
+  background: url('../../public/images/3d-front.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.noiseEffect {
+  background: url('../../public/images/noiseEffect.svg');
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+.glitter-background{
+  background: linear-gradient(135deg, rgba(232, 184, 246, 0.1) 0%, rgba(20, 60, 253, 0.1) 100%);
 
+}
+.glitter-text{
+  background: linear-gradient(135deg, #E8B8F6 0%, #143CFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  text-fill-color: transparent; 
+}
+.card-text{
+  color:#004EEB;
+}
+.card-text-gradient{
+  background: linear-gradient(135deg, #E8B8F6 0%, #143CFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  text-fill-color: transparent; 
+}
 .points {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.144) 0%, rgba(255, 255, 255, 0.16) 100%);
 
+}
+.glass-card {
+  border-radius: 13.21px;
+  backdrop-filter: blur(15px);
+  /* border-image: linear-gradient(135deg, rgba(232, 184, 246, 0.2) 0%, #143cfd33 100%); */
+  border-image-slice: 1; 
 }
