@@ -1,4 +1,5 @@
-import HackathonList from "@/components/pages/hackathon";
+import HackathonList from "@/components/pages/hackathon/Hackathon";
+
 
 const leadership = () => {
     return (
