@@ -17,11 +17,12 @@ export default function Leaderboard() {
       <div className=" bg-no-repeat bg-custom-light bg-light-gradient bg-custom-light dark:bg-dark-gradient dark:bg-custom-light pt-[131px] px-8 lg:px-0">
         <Container className='py-0 containers'>
           <div className="border-[2px] border-[#E8B8F680] dark:border-none dark:bg-tag-dark dark:p-[1px]  rounded-[40px]">
-                        <div  className="bg-tag-light  dark:bg-tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
-                            <p className="text-[#1D2939] dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and communities</p>
-                        </div>
-                        </div>
-          <h1 className="font-semibold text-[40px] md:text-[60px]">Leaderboard</h1>
+            <div className="bg-tag-light  dark:bg-tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
+              <p className="text-[#1D2939] dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and communities</p>
+            </div>
+          </div>
+          <p className="font-semibold  text-[#1D2939] tracking-[2%] text-center text-[40px] md:text-[60px] dark:text-white">Leaderboard</p>
+
           <div className="md:flex-row flex flex-col w-full  justify-center gap-[37px] md:items-end mt-[42px]">
 
 
