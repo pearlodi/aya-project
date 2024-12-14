@@ -3,6 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: 'Uncut Sans', sans-serif;
+}
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/Uncut-Sans-regular.woff2') format('woff2'),
+       url('/fonts/Uncut-Sans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/Uncut-Sans-bold.woff2') format('woff2'),
+       url('/fonts/Uncut-Sans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Uncut Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Uncut Sans', sans-serif;
+  font-weight: bold; 
+}
+
+body {
+  font-family: 'Uncut Sans', sans-serif;
+}
+
+
 
 .containers {
   @apply w-full flex flex-col items-center justify-center

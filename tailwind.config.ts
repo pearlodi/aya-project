@@ -21,7 +21,7 @@ export default {
 			  url('/images/background-bottom.svg'),
 			  url('/images/background-top.svg')
 			`,
-				'tag-light': 'linear-gradient(135deg, #e8b8f629 0%, #143cfd80 100%)',
+				'tag-light': 'linear-gradient(135deg, rgba(232, 184, 246, .16), rgba(20, 60, 253, .16))',
 				'tag-dark': 'linear-gradient(135deg, rgba(232, 184, 246, 0.3) 0%, rgba(20, 60, 253, 0.3) 100%)',
 				'glitter-gradient-dark': 'linear-gradient(135deg, rgba(232, 184, 246, 0.2) 0%, rgba(20, 60, 253, 0.2) 100%)',
 				'glitter-gradient': 'linear-gradient(135deg, #E8B8F6 0%, #143CFD 100%)',

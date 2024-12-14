@@ -16,9 +16,11 @@ export default function Leaderboard() {
     <section>
       <div className=" bg-no-repeat bg-custom-light bg-light-gradient bg-custom-light dark:bg-dark-gradient dark:bg-custom-light pt-[131px] px-8 lg:px-0">
         <Container className='py-0 containers'>
-          <div className="tag dark:tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
-            <p className="text-gray-100 dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and Communities</p>
-          </div>
+          <div className="border-[2px] border-[#E8B8F680] dark:border-none dark:bg-tag-dark dark:p-[1px]  rounded-[40px]">
+                        <div  className="bg-tag-light  dark:bg-tag-dark w-[240px] h-[26px] rounded-[40px]  flex justify-center items-center">
+                            <p className="text-[#1D2939] dark:text-[#D0D5DD] text-center text-[12px] md:text-sm font-medium">Top Builders and communities</p>
+                        </div>
+                        </div>
           <h1 className="font-semibold text-[40px] md:text-[60px]">Leaderboard</h1>
           <div className="md:flex-row flex flex-col w-full  justify-center gap-[37px] md:items-end mt-[42px]">
 
@@ -30,11 +32,11 @@ export default function Leaderboard() {
               </div>
               <div className="mt-2 md:mt-[17.9px]">
                 <Image src='images/3d-top.svg' width={284} height={16.68} alt="image" />
-                <div className=" h-[121px]"  style={{
-    backgroundImage: "url('/images/3d-front.svg')",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  }}>
+                <div className=" h-[121px]" style={{
+                  backgroundImage: "url('/images/3d-front.svg')",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}>
                   <div className="flex flex-col justify-center items-center pt-4">
                     <p className="font-medium text-[#FFFFFF99] text-base">Earned {topThree[1].points} points</p>
                     <hr className="w-[205.58px] border border-gray-300 mt-[9px]" />
@@ -53,11 +55,11 @@ export default function Leaderboard() {
               </div>
               <div className="mt-2 md:mt-[17.9px]">
                 <Image src='images/3d-top-light.svg' width={288} height={24} alt="image" />
-                <div className=" h-[121px] md:h-[174.11px]"  style={{
-    backgroundImage: "url('/images/3d-front.svg')",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  }}>
+                <div className=" h-[121px] md:h-[174.11px]" style={{
+                  backgroundImage: "url('/images/3d-front.svg')",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}>
                   <div className="flex flex-col justify-center items-center pt-4">
                     <p className="font-medium text-[#FFFFFF99]  text-base">Earned {topThree[0].points} points</p>
                     <hr className="w-[205.58px] border border-gray-300 mt-[9px]" />

@@ -27,7 +27,7 @@ export default function ProjectPage() {
                             <Container>
                                 <div className='w-full max-w-full md:w-[1195px] md:flex justify-between'>
                                     <div className='w-full  max-w-full md:w-[307px]'>
-                                        <p className='font-bold leading-[32px] md:leading-[39.2px] text-2xl md:text-[28px] dark:text-white text-[#F2F4F7] mt-4 md:mt-0 '>Powering a community
+                                        <p className='font-bold leading-[32px] md:leading-[39.2px] text-2xl md:text-[28px] dark:text-white text-[#344054] mt-4 md:mt-0 '>Powering a community
                                             of African Builders</p>
                                     </div>
                                     <div className='md:flex gap-4 mt-4 md:mt-0'>
