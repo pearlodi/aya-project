@@ -40,7 +40,7 @@ const HackathonCard = ({ hackathon }: { hackathon: Hackathon }) => (
             </div>
             <hr className="border dark:border-[#1D2939] border-[#EAECF0] mt-4"></hr>
             <div className="px-4">
-                <div className="flex gap-2 mt-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-6">
                     {hackathon.stacks.slice(0, 3).map((stack: string, idx: number) => (
                         <ul
                             key={idx}
@@ -62,12 +62,12 @@ const HackathonCard = ({ hackathon }: { hackathon: Hackathon }) => (
                         </ul>
                     )}
                 </div>
-                <div className="flex justify-between items-center mt-5 mb-5">
+                <div className="md:flex justify-between items-center mt-5 mb-5">
                     <div className="flex items-center gap-1 border border-[#F2F4F7] p-[4px] rounded-[4px] dark:border-none dark:bg-transparent bg-[#F9FAFB]">
                         <Image src='/images/company.svg' width={20} height={20} alt="" />
                         <p className="font-medium text-base  dark:text-[#98A2B3] text-[#1D2939]">{hackathon.company}</p>
                     </div>
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 mt-2 md:mt-0">
                         <Image src='/images/location.svg' width={20} height={20} alt="" />
                         <p className="font-medium text-base dark:text-[#98A2B3] text-[#667085]">{hackathon.location}</p>
                     </div>
