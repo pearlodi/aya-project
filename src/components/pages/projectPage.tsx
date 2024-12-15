@@ -11,7 +11,7 @@ export default function ProjectPage() {
                     <Container >
                         <div className='flex justify-center items-center '>
                             <div className="w-full max-w-full md:w-[1110px] mt-[157px] flex flex-col items-center justify-center" >
-                                <h1 className="font-bold dark:text-white leading-[42px] md:leading-[60px] text-[#1D2939] tracking-[2%] text-center text-3xl md:text-[48px]">Explore projects that showcase <br />the
+                                <h1 className="font-bold dark:text-white leading-[42px] md:leading-[60px] text-[#1D2939] tracking-[2%] text-center text-2xl md:text-[48px]">Explore projects that showcase <br />the
                                     power of African Tech Innovation</h1>
                             </div>
                         </div>
@@ -27,10 +27,10 @@ export default function ProjectPage() {
                             <Container>
                                 <div className='w-full max-w-full md:w-[1195px] md:flex justify-between'>
                                     <div className='w-full  max-w-full md:w-[307px]'>
-                                        <p className='font-bold leading-[32px] md:leading-[39.2px] text-2xl md:text-[28px] dark:text-white text-[#344054] mt-4 md:mt-0 '>Powering a community
+                                        <p className='font-bold leading-[32px] md:leading-[39.2px] text-2xl md:text-[28px] dark:text-white text-[#344054] mt-4 md:mt-0 text-center md:text-left'>Powering a community
                                             of African Builders</p>
                                     </div>
-                                    <div className='md:flex gap-4 mt-4 md:mt-0'>
+                                    <div className='flex flex-col md:flex-row items-center gap-2 md:gap-4 mt-4 md:mt-0'>
                                         <div className=''>
                                             <div className='absolute h-[79.05px] w-[202.38px] '
                                     
@@ -71,12 +71,12 @@ export default function ProjectPage() {
                 <Container>
                     <div className='w-full max-w-full md:w-[1195px]'>
                         <h1 className='font-bold text-2xl md:text-[40px] dark:text-white text-[#1D2939]'>Explore projects </h1>
-                        <div className='mt-[50px] flex items-center justify-between'>
+                        <div className='mt-[50px] md:flex items-center justify-between'>
                             <Input
                                 placeholder="Search project..."
                                 className="w-full max-w-full border placeholder:dark:text-[#667085] dark:border-[#344054] border-[#D0D5DD] md:w-[395px] placehoder:text-[#667085] text-sm"
                             />
-                            <div className='border dark:border-[#344054] border-[#98A2B3] py-3 px-[18px] gap-[10px] rounded-[8px] font-semibold text-base dark:text-[#667085] text-[#344054] flex items-center'><Image src='/images/filter-lines.svg' width={20} height={20} alt='filter' /> Filter</div>
+                            <div className='mt-2 md:mt-0 border dark:border-[#344054] border-[#98A2B3] py-3 px-[18px] gap-[10px] rounded-[8px] font-semibold text-base dark:text-[#667085] text-[#344054] flex items-center'><Image src='/images/filter-lines.svg' width={20} height={20} alt='filter' /> Filter</div>
                         </div>
                     </div>
                 </Container>
