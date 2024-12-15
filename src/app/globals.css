@@ -3,64 +3,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/Uncut-Sans-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 body {
   font-family: 'Uncut Sans', sans-serif;
 }
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/Uncut-Sans-regular.woff2') format('woff2'),
+       url('/fonts/Uncut-Sans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/Uncut-Sans-bold.woff2') format('woff2'),
+       url('/fonts/Uncut-Sans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Uncut Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Uncut Sans', sans-serif;
+  font-weight: bold; 
+}
+
+body {
+  font-family: 'Uncut Sans', sans-serif;
+}
+
+
+
 .containers {
   @apply w-full flex flex-col items-center justify-center
 }
-
-.tag {
-  background: linear-gradient(135deg, rgba(232, 184, 246, 0.16) 0%, rgba(20, 60, 253, 0.16) 100%);
-  border: 1px solid rgba(208, 213, 221, 1);
+.gradient-background {
+  @apply bg-no-repeat bg-custom-light bg-light-gradient bg-custom-light dark:bg-dark-gradient dark:bg-custom-light 
 }
 
-.tag-dark {
-  background: linear-gradient(135deg, rgba(232, 184, 246, 0.3) 0%, rgba(20, 60, 253, 0.3) 100%);
-  border: 1px solid rgba(232, 184, 246, 0.5);
-
-}
-
-.hack {
-  background: url('../../public/images/hack.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.back {
-  background: url('../../public/images/3d-front.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.noiseEffect {
-  background: url('../../public/images/noiseEffect.svg');
-  background-size: fit;
-  background-repeat: no-repeat;
-}
 .glitter-background{
   background: linear-gradient(135deg, rgba(232, 184, 246, 0.1) 0%, rgba(20, 60, 253, 0.1) 100%);
-
-}
-.glitter-text{
-  background: linear-gradient(135deg, #E8B8F6 0%, #143CFD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  background-clip: text;
-  text-fill-color: transparent; 
-}
-
-.card-border{
-  border: 1px solid;
-border-image-source: linear-gradient(135deg, #E8B8F6 0%, #143CFD 100%);
-border-image-slice: 1; 
-
-}
-.points {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.144) 0%, rgba(255, 255, 255, 0.16) 100%);
 }

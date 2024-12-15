@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
-import './globals.css';  // Import global styles where the font is defined
+import './globals.css';  
 import DarkModeToggle from '@/components/DarkModeToggle';
 
 export default function RootLayout({
