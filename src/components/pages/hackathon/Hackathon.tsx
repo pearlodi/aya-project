@@ -73,40 +73,42 @@ const HackathonList = () => {
                                     <HackathonCard key={index} hackathon={hackathon} />
                                 ))}
                         </div>
+
+                        <hr className="w-full border dark:border-[#344054] border-[#EAECF0] mt-6" />
+                    <div className="flex mt-6 w-full justify-end pb-5">
+                        <Button
+                            onClick={() => handlePageChange(currentPage - 1)}
+                            disabled={currentPage === 1}
+                            className="gap-3 border dark:border-[#344054] border-[#D0D5DD] dark:border-[#344054] rounded-r-none"
+                        >
+                            <Image src='/images/arrow-left.svg' width={11.67} height={11.67} alt="arrow" />
+
+                            Previous
+
+                        </Button>
+                        <div className="">
+                            {Array.from({ length: totalPages }, (_, index) => (
+                                <Button
+                                    key={index + 1}
+                                    onClick={() => handlePageChange(index + 1)}
+                                    className={`${currentPage === index + 1 ? "bg-[#004EEB] dark:border-[#344054] text-white " : ""} rounded-none border dark:border-[#344054] border-[#D0D5DD]`}
+                                >
+                                    {index + 1}
+                                </Button>
+                            ))}
+                        </div>
+                        <Button
+                            onClick={() => handlePageChange(currentPage + 1)}
+                            disabled={currentPage === totalPages}
+                            className="gap-3 border dark:border-[#344054] border-[#D0D5DD] rounded-l-none"
+                        >
+                            Next
+                            <Image src='/images/arrow-right.svg' width={11.67} height={11.67} alt="arrow" />
+
+                        </Button>
                     </div>
-                    <hr className="w-full border dark:border-[#344054] border-[#EAECF0] mt-6" />
-                            <div className="flex mt-6 w-full justify-end pb-5">
-                                <Button
-                                    onClick={() => handlePageChange(currentPage - 1)}
-                                    disabled={currentPage === 1}
-                                    className="gap-3 border dark:border-[#344054] border-[#D0D5DD] dark:border-[#344054] rounded-r-none"
-                                >
-                                    <Image src='/images/arrow-left.svg' width={11.67} height={11.67} alt="arrow" />
-
-                                    Previous
-
-                                </Button>
-                                <div className="">
-                                    {Array.from({ length: totalPages }, (_, index) => (
-                                        <Button
-                                            key={index + 1}
-                                            onClick={() => handlePageChange(index + 1)}
-                                            className={`${currentPage === index + 1 ? "bg-[#004EEB] dark:border-[#344054] text-white " : ""} rounded-none border dark:border-[#344054] border-[#D0D5DD]`}
-                                        >
-                                            {index + 1}
-                                        </Button>
-                                    ))}
-                                </div>
-                                <Button
-                                    onClick={() => handlePageChange(currentPage + 1)}
-                                    disabled={currentPage === totalPages}
-                                    className="gap-3 border dark:border-[#344054] border-[#D0D5DD] rounded-l-none"
-                                >
-                                    Next
-                                    <Image src='/images/arrow-right.svg' width={11.67} height={11.67} alt="arrow" />
-
-                                </Button>
-                            </div>
+                    </div>
+                  
                 </Container>
             </div>
         </>
